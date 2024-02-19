@@ -7,8 +7,8 @@ public class Perecedero extends Producto {
 
     private LocalDate fechaVencimiento;
 
-    public Perecedero (String idProducto, String nombreProducto, String descripcion, double valor, int stock, LocalDate fechaVencimiento) {
-        super(idProducto, nombreProducto, descripcion, valor, stock);
+    public Perecedero (String idProducto, String nombreProducto, String descripcion, int stock,double value,  LocalDate fechaVencimiento) {
+        super(idProducto, nombreProducto, descripcion, stock, value);
         this.fechaVencimiento = fechaVencimiento;
     }
 
@@ -23,7 +23,7 @@ public class Perecedero extends Producto {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Perecederos)) return false;
+        if (!(o instanceof Perecedero)) return false;
         Perecedero perecedero = (Perecedero) o;
         return idProducto.equals(perecedero.idProducto);
     }

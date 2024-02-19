@@ -1,0 +1,238 @@
+.container {
+    -fx-background-image: url('shop/develop/aurorashop/images/background.png');
+}
+
+.btnPrimary {
+    -fx-background-color: #FC7892;
+    -fx-background-radius: 50;
+    -fx-border-color: #DB5275;
+    -fx-border-width: 3;
+    -fx-border-radius: 50;
+    -fx-font-weight: bold;
+    -fx-font-family: Bahnschrift;
+    -fx-font-size: 20;
+    -fx-text-fill: #FFFFFF;
+}
+
+.btnSecondary {
+    -fx-background-color: #FC7892;
+    -fx-background-radius: 25;
+    -fx-font-weight: bold;
+    -fx-font-family: Bahnschrift;
+    -fx-font-size: 15;
+    -fx-text-fill: #FFFFFF;
+}
+
+.btnSecondary:hover {
+    -fx-border-color: #DB5275;
+    -fx-border-radius: 25;
+    -fx-border-width: 2;
+}
+
+.btnUpdate {
+    -fx-background-color: #DB5275; /*012631*/
+    -fx-background-radius: 25;
+    -fx-font-family: Bahnschrift;
+    -fx-font-size: 15;
+    -fx-text-fill: #FFFFFF;
+}
+
+.btnUpdate:hover {
+    -fx-background-color: #FC7892;//
+    -fx-border-color: #DB5275;
+    -fx-font-weight: bold;
+    -fx-border-radius: 25;
+    -fx-border-width: 2;
+}
+
+.btnDanger {
+    -fx-background-color: *#FB0000;
+    -fx-background-radius: 25;
+    -fx-font-family: Bahnschrift;
+    -fx-font-size: 15;
+    -fx-text-fill: #FB0000;
+}
+
+.btnDanger:hover {
+    -fx-background-color: #F44141;
+    -fx-border-color: #FB0000;
+    -fx-font-weight: bold;
+    -fx-border-radius: 25;
+    -fx-border-width: 2;
+}
+
+.btnBack {
+    -fx-background-color:  #DB5275;
+    -fx-background-radius: 50;
+}
+
+.btnBack:hover{
+    -fx-border-color: #F8CAD6; /*#DFEAEC*/
+    -fx-border-radius: 50;
+    -fx-border-width: 2;
+}
+
+.exit{
+    -fx-background-color:  transparent;
+}
+
+.exit:hover{
+    -fx-border-color: #F8CAD6; /*#DFEAEC;*/
+    -fx-border-radius: 50;
+    -fx-border-width: 2;
+}
+
+.bgGradient {
+ -fx-background-color: linear-gradient(from 100.0% 0.0% to 100.0% 100.0%, #fc7892 0.0%,#ffffff 100.0%);
+}
+
+.labelTitle {
+    -fx-font-weight: bold;
+    -fx-font-family: Bahnschrift;
+    -fx-font-size: 15;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #FC7892
+    -fx-background-radius: 15 15 0 0;
+    -fx-border-color: #DB5275;
+    -fx-border-radius: 15 15 0 0;
+    -fx-border-width: 2 2 0 2;
+}
+
+.table{
+    -fx-border-color: #DB5275;
+    -fx-border-radius: 10;
+    -fx-border-width: 2;
+    -fx-background-radius: 10;
+    -fx-font-family: Bahnschrift;
+    -fx-font-size: 13;
+    -fx-text-fill: #FC7892;
+}
+
+.column{
+    -fx-border-color: #DB5275;
+    -fx-border-width: 0 1 1 0;
+}
+
+.column:hover{
+    -fx-font-weight: bold;
+}
+
+.table-row-cell:hover {
+    -fx-font-size: 13;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: #007bff;
+    -fx-border-color: #0056b3;
+}
+
+.startColumn{
+    -fx-background-radius: 10 0 0 0;
+}
+
+.endColumn{
+    -fx-border-width: 0 0 1 0;
+    -fx-background-radius: 0 10 0 0;
+}
+
+.totalTextStyle{
+    -fx-font-family: Bahnschrift;
+    -fx-font-size: 13;
+    -fx-font-weight: bold;
+}
+
+.totalStyle{
+    -fx-text-fill: #ffffff;
+    -fx-font-family: Bahnschrift;
+    -fx-font-size: 13;
+    -fx-font-weight: bold;
+    -fx-background-color: #FC7892;
+}
+
+.labelForm{
+    -fx-background-color: #f8d9e6;
+    -fx-background-radius: 10;
+    -fx-border-color: #DB5275;
+    -fx-border-radius: 10;
+    -fx-border-width: 2;
+}
+
+.labelInf{
+    -fx-font-family: Bahnschrift;
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+    -fx-text-fill: #DB5275;
+}
+
+.labelNumber{
+    -fx-font-family: Bahnschrift;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FF1700;
+}
+
+.labelData{
+    -fx-font-family: Bahnschrift;
+    -fx-font-size: 12;
+    -fx-underline: true;
+    -fx-text-fill: #FC7892;
+}
+
+.modalStyle{
+    -fx-background-color: #E6CED7;
+    -fx-background-radius: 25;
+    -fx-border-color: #DB5275;
+    -fx-border-radius: 25;
+    -fx-border-width: 3;
+}
+
+.labelCliente {
+    -fx-font-weight: bold;
+    -fx-font-family: Bahnschrift;
+    -fx-font-size: 15;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #FC7892;
+    -fx-background-radius: 25;
+    -fx-border-color: #DB5275;
+    -fx-border-radius: 25;
+    -fx-border-width: 2;
+}
+
+.clienteType{
+    -fx-font-family: Bahnschrift;
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+}
+
+.btnAddProducto {
+    -fx-background-color: #00ff00;
+    -fx-background-radius: 25;
+    -fx-font-family: Bahnschrift;
+    -fx-font-size: 12;
+    -fx-text-fill: #FFFFFF;
+}
+
+.btnAddProducto:hover {
+    -fx-background-color: #66ff66;
+    -fx-border-color: #00ff00;
+    -fx-border-radius: 25;
+    -fx-font-weight: bold;
+}
+
+.btnBackVenta {
+    -fx-background-color: #8a8a5c;
+    -fx-background-radius: 25;
+    -fx-font-family: Bahnschrift;
+    -fx-font-size: 12;
+    -fx-text-fill: #FFFFFF;
+}
+
+.btnBackVenta:hover {
+    -fx-background-color: #b8b894;
+    -fx-border-color: #8a8a5c;
+    -fx-border-radius: 25;
+    -fx-font-weight: bold;
+}
+
+
+

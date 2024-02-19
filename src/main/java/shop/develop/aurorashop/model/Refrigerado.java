@@ -7,8 +7,8 @@ public class Refrigerado extends Producto {
     private String codigoAprovacion;
     private double temperatura;
 
-    public Refrigerado (String idProducto, String nombreProducto, String descripcion, double valor, int stock, String codigoAprovacion, double temperatura) {
-        super(idProducto, nombreProducto, descripcion, valor, stock);
+    public Refrigerado (String idProducto, String nombreProducto, String descripcion, int stock, double value, String codigoAprovacion, double temperatura) {
+        super(idProducto, nombreProducto, descripcion, stock, value);
         this.codigoAprovacion = codigoAprovacion;
         this.temperatura = temperatura;
     }

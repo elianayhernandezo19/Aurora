@@ -9,8 +9,8 @@ public class Enlatado extends Producto {
     private double peso;
     private Pais pais;
 
-    public Enlatado (String idProducto, String nombreProducto, String descripcion, double valor, int stock, LocalDate fechaEnvasado, double peso, Pais pais) {
-        super(idProducto, nombreProducto, descripcion, valor, stock);
+    public Enlatado (String idProducto, String nombreProducto, String descripcion, int stock, double value, LocalDate fechaEnvasado, double peso, Pais pais) {
+        super(idProducto, nombreProducto, descripcion, stock, value);
         this.fechaEnvasado = fechaEnvasado;
         this.peso = peso;
         this.pais = pais;

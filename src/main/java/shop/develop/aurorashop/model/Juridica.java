@@ -12,7 +12,7 @@ public class Juridica extends Cliente {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Juridica)) return false;
-        Juridica juridica = (juridica) o;
+        Juridica juridica = (Juridica) o;
         return id.equals(juridica.id);
     }
 
