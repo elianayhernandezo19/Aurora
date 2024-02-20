@@ -358,7 +358,7 @@
                                                 <String fx:value="startColumn" />
                                             </styleClass>
                                         </TableColumn>
-                                        <TableColumn fx:id="nombreProductosVenta" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" styleClass="column" text="Producto" />
+                                        <TableColumn fx:id="titleVenta" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" styleClass="column" text="Producto" />
                                         <TableColumn fx:id="priceProductosVenta" maxWidth="80.0" minWidth="80.0" styleClass="column" text="Precio" />
                                         <TableColumn fx:id="stockProductosVenta" maxWidth="80.0" minWidth="80.0" text="Disponible">
                                             <styleClass>
@@ -388,7 +388,7 @@
                                                 <HBox alignment="CENTER" prefHeight="44.0" prefWidth="272.0" spacing="5.0" GridPane.rowIndex="1">
                                                     <children>
                                                         <Label prefWidth="60.0" styleClass="labelInf" text="Producto:" />
-                                                        <Label fx:id="nombreProductoAdd" styleClass="labelData" text="Producto tales" />
+                                                        <Label fx:id="titleAdd" styleClass="labelData" text="Producto tales" />
                                                     </children>
                                                     <GridPane.margin>
                                                         <Insets left="10.0" />
@@ -429,7 +429,7 @@
                 </AnchorPane>
             </children>
         </AnchorPane>
-        <AnchorPane fx:id="productosContainer" layoutX="10.0" layoutY="10.0" prefHeight="450.0" prefWidth="750.0" styleClass="bgGradient" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <AnchorPane fx:id="productosContainer" layoutX="10.0" layoutY="10.0" prefHeight="450.0" prefWidth="750.0" styleClass="bgGradient" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
                 <AnchorPane fx:id="productosDataPage" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <children>
@@ -655,7 +655,7 @@
         </AnchorPane>
         <AnchorPane fx:id="clientesContainer" layoutX="20.0" layoutY="20.0" prefHeight="450.0" prefWidth="750.0" styleClass="bgGradient" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
-                <AnchorPane fx:id="clientesDataPage" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <AnchorPane fx:id="clientesDataPage" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <children>
                         <ImageView fitHeight="83.0" fitWidth="90.0" layoutX="145.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -731,12 +731,12 @@
                 </AnchorPane>
                 <AnchorPane fx:id="clientesRegisterPage" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <children>
-                        <ImageView fitHeight="77.0" fitWidth="376.0" layoutX="249.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="96.0" fitWidth="352.0" layoutX="259.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@images/name.png" />
                             </image>
                         </ImageView>
-                        <ImageView fitHeight="81.0" fitWidth="482.0" layoutX="144.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="81.0" fitWidth="482.0" layoutX="146.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@images/logo2.png" />
                             </image>
@@ -865,7 +865,7 @@
                                 </GridPane>
                             </graphic>
                         </Label>
-                        <Label alignment="CENTER" layoutX="293.0" layoutY="104.0" prefHeight="30.0" prefWidth="165.0" styleClass="labelClient" text="Clientes" />
+                        <Label alignment="CENTER" layoutX="293.0" layoutY="104.0" prefHeight="30.0" prefWidth="165.0" styleClass="labelCliente" text="Clientes" />
                     </children>
                 </AnchorPane>
             </children>

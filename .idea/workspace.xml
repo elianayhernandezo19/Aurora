@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96c514c9-cf20-4d9b-994d-00d2fced23a9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shop/develop/aurorashop/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shop/develop/aurorashop/ShopApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shop/develop/aurorashop/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shop/develop/aurorashop/ShopBackend.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shop/develop/aurorashop/model/Enlatado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shop/develop/aurorashop/model/Enlatado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shop/develop/aurorashop/model/Juridica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shop/develop/aurorashop/model/Juridica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shop/develop/aurorashop/model/Perecedero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shop/develop/aurorashop/model/Perecedero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/shop/develop/aurorashop/ShopBackend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shop/develop/aurorashop/ShopBackend.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/shop/develop/aurorashop/model/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shop/develop/aurorashop/model/Producto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shop/develop/aurorashop/model/Refrigerado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shop/develop/aurorashop/model/Refrigerado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shop/develop/aurorashop/model/Tienda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shop/develop/aurorashop/model/Tienda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/shop/develop/aurorashop/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/shop/develop/aurorashop/aurora-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/shop/develop/aurorashop/aurora-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/shop/develop/aurorashop/aurora-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,16 +102,5 @@
       <updated>1708292258853</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/shop/develop/aurorashop/ShopBackend.java</url>
-          <line>306</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

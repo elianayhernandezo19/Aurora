@@ -40,13 +40,13 @@ public class ShopBackend {
         @FXML public TableColumn<DetalleVenta, String> columnDescripcion;
         @FXML public TableColumn<DetalleVenta, Double> columnPrice, columnAccumulated;
         @FXML public TableView<Producto> tableAddProductosVenta;
-        @FXML public TableColumn<Producto, String> idProductosVenta, nombreProductosVenta;
+        @FXML public TableColumn<Producto, String> idProductosVenta, titleVenta;
         @FXML public TableColumn<Producto, Double> priceProductosVenta;
         @FXML private TableColumn<Producto, Integer> stockProductosVenta;
         @FXML public Button btnProductoSearch, closeModalVenta, closeModal, backButtonData, backButtonRegister, updateButtonCliente, deleteButonCliente, addCliente,
                 updateButtonVentas, updateButtonProducto, deleteButonProducto, addProducto, closeModalProductos;
         @FXML public Label labelVentaNombre, labelVentaId, labelVentaDireccion, labelVentaTelefono, labelVentaDate, labelSerie, labelSubTotal,
-                labelIva, labelTotal, nombreProductoAdd, idAdd, stockAdd;
+                labelIva, labelTotal, titleAdd, idAdd, stockAdd;
         //Productos, clientes y venta List
 
         public ObservableList<Venta> listVenta = FXCollections.observableArrayList();
@@ -213,11 +213,11 @@ public class ShopBackend {
         public void addClienteList() {
             if ("Natural".equals(typeClienteSelect.getValue())) {
                 Natural newCliente = new Natural(idInput.getText(), nombreInput.getText(), apellidoInput.getText(),
-                        telefonoInput.getText(), direccionInput.getText(), emailInput.getText(), fechaNacimientoInput.getValue());
+                        direccionInput.getText(), telefonoInput.getText(), emailInput.getText(), fechaNacimientoInput.getValue());
                 listCliente.add(newCliente);
             } else {
                 Juridica newCliente = new Juridica(idInput.getText(), nombreInput.getText(), apellidoInput.getText(),
-                        telefonoInput.getText(), direccionInput.getText());
+                        direccionInput.getText(), telefonoInput.getText());
                 listCliente.add(newCliente);
             }
         }
@@ -289,7 +289,7 @@ public class ShopBackend {
         ///////////////CRUD VENTAS///////////////
         public void getConfigurationProductosVenta(){
             idProductosVenta.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getIdProducto()));
-            nombreProductosVenta.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getNombreProducto()));
+            titleVenta.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getTitle()));
             priceProductosVenta.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getValue()));
             stockProductosVenta.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getStock()));
         }
@@ -336,7 +336,7 @@ public class ShopBackend {
                     for (Producto producto:listProducto) {
                         if (clickedProducto.getIdProducto().equals(producto.getIdProducto())){
                             paneAdd.setVisible(true);
-                            nombreProductoAdd.setText(producto.getNombreProducto());
+                            titleAdd.setText(producto.getTitle());
                             idAdd.setText(producto.getIdProducto());
                             stockAdd.setText(String.valueOf(producto.getStock()));
                             break;
@@ -418,7 +418,7 @@ public class ShopBackend {
 
             idProducto.setText(producto.getIdProducto());
             idProducto.setDisable(true);
-            productoField.setText(producto.getNombreProducto());
+            productoField.setText(producto.getTitle());
             productoField.setDisable(true);
             detailField.setText(producto.getDescripcion());
             detailField.setDisable(true);
@@ -507,7 +507,7 @@ public class ShopBackend {
 
         public void getProductoList(){
             codigoCol.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getIdProducto()));
-            productoCol.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getNombreProducto()));
+            productoCol.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getTitle()));
             typeCol.setCellValueFactory(cellData -> new SimpleStringProperty(getTypeProducto(cellData.getValue())));
             stockCol.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getStock()));
             valueCol.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getValue()));
